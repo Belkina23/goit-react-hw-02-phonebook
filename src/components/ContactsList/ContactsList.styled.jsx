@@ -9,7 +9,8 @@ const ListOfContact = styled.ul`
 const Container = styled.div`
   width: 300px;
   margin: 0;
-  border: 1px solid gray;
+  border: 1px solid #a5a2a2;
+  border-radius: 6px;
   padding: 20px;
 `;
 
@@ -30,7 +31,7 @@ const Button = styled.button`
   border-radius: 5px;
   border: none;
   cursor: pointer;
-  
+
   :hover,
     :focus {
       background-color: #918d8d;}

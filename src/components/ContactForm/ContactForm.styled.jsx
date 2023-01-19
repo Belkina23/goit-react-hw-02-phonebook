@@ -2,12 +2,13 @@ import styled from '@emotion/styled';
 
 const Form = styled.form`
   display: flex;
-  gap: 5px;
+  gap: 7px;
   flex-direction: column;
   justify-content: center;
-  padding: 15px;
+  padding: 20px;
   width: 300px;
-  border: 1px solid gray;
+  border: 1px solid #a5a2a2;
+  border-radius: 6px;
 `;
 
 const Input = styled.input`
