@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-const ListOfContact = styled.ul`
+const ListOfContact = styled.div`
   list-style-type: circle;
   padding: 0;
   margin: 0;

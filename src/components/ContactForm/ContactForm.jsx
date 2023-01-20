@@ -67,13 +67,5 @@ class ContactForm extends Component {
     );
   }
 }
-ContactForm.propType = {
-  name: PropTypes.string,
-  number: PropTypes.string,
-  handelSubmit: PropTypes.func,
-  inputNameId: PropTypes.string,
-  inputNumberId: PropTypes.string,
-  buttonId: PropTypes.string,
-};
 
 export default ContactForm;

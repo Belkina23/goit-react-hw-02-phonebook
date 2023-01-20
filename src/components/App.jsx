@@ -1,4 +1,3 @@
-import { PropTypes } from 'prop-types';
 import { Component } from 'react';
 import { AppStyled } from './App.styled';
 import ContactForm from './ContactForm';
@@ -64,22 +63,5 @@ contact.id = shortid.generate();
     );
   }
 }
-
-App.propTypes = {
-  contacts: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.string,
-      name: PropTypes.string,
-      number: PropTypes.string,
-    })
-  ),
-  filter: PropTypes.string,
-  onSubmitHendler: PropTypes.func,
-  delete: PropTypes.func,
-  filterName: PropTypes.func,
-};
-
-
-
 
 export default App;
