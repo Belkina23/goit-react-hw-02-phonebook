@@ -29,13 +29,13 @@ contact.id = shortid.generate();
 
     if (contactName.includes(contact.name)) {
       alert(`${contact.name} is already in contacts list`);
-     return;
+     return true;
     }
 
     this.setState(prevState => ({
       contacts: [...prevState.contacts, contact],
     }));
-   
+    return false;
   };
 
   filterName = event => {

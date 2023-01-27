@@ -19,9 +19,11 @@ class ContactForm extends Component {
   reset = () => {
     this.setState({ name: '', number: '' });
   };
+
   handelSubmit = event => {
     event.preventDefault();
-    this.props.onSubmitForm(this.state);
+    const isIncludes = this.props.onSubmitForm(this.state);
+    if (isIncludes) return;
     this.reset();
   };
 
