@@ -4,6 +4,7 @@ import ContactForm from './ContactForm';
 import Filter from './Filter';
 import ContactsList from './ContactsList';
 
+
 const shortid = require('shortid');
 const contactId = shortid.generate(15);
 
@@ -28,12 +29,13 @@ contact.id = shortid.generate();
 
     if (contactName.includes(contact.name)) {
       alert(`${contact.name} is already in contacts list`);
-      return;
+     return;
     }
 
     this.setState(prevState => ({
       contacts: [...prevState.contacts, contact],
     }));
+   
   };
 
   filterName = event => {
